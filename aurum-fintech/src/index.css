@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #020617;
+  color: white;
+  font-family: Inter, sans-serif;
+  overflow-x: hidden;
+}
+
+.hero-bg {
+  background: radial-gradient(
+      circle at top left,
+      rgba(255, 215, 0, 0.15),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(59, 130, 246, 0.15),
+      transparent 30%
+    ),
+    #020617;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gold-btn {
+  background: linear-gradient(135deg, #ffd700, #ffb300);
+  color: black;
+}
+
+.glow {
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.35);
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker {
+  width: max-content;
+  animation: ticker 25s linear infinite;
+}
+
+.ticker:hover {
+  animation-play-state: paused;
+}
