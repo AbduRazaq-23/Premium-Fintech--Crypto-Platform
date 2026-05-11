@@ -1,5 +1,6 @@
 import Coin3D from "../components/Coin3D";
 import { Link } from "react-router-dom";
+
 export default function Signup() {
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
