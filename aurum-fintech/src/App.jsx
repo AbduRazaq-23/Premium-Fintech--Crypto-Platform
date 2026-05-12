@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 
-import Dashboard from "./pages/Dashboard";
 import Markets from "./pages/Markets";
+import Dashboard from "./pages/Dashboard";
 import Signup from "./pages/SignUp";
 
 export default function App() {
